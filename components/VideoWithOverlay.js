@@ -16,9 +16,9 @@ const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
                         maxHeight: '600px'
                     }}
                     poster={posterSrc} 
-                    autoPlay
+                    // autoPlay
                     playsInline
-                    loop 
+                    // loop 
                     muted
                     preload="auto"
                 >
