@@ -1,6 +1,7 @@
 import React from "react";
 import VideoWithOverlay from "../components/VideoWithOverlay";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 const Index = () => {
     return (
@@ -14,6 +15,7 @@ const Index = () => {
                 posterSrc={'https://light-vision.ucoz.ru/fairy/video/preview.jpg'}
                 overlayColor={'black'}
             />
+            <Footer/>
         </>
     )
 }
