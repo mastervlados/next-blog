@@ -6,7 +6,7 @@ const Footer = ({}) => {
         <footer>
             <div 
                 className="wrap"
-                style={{ display: 'flex', justifyContent: 'space-around', marginTop: '30px' }}
+                style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px', marginBottom: '150px' }}
             > 
                 <div className="footer-container">
                     <h3 className="footer-ul-heading">Образование:</h3>
@@ -20,7 +20,7 @@ const Footer = ({}) => {
                 </div>
                 <div className="footer-container">
                     <h3 className="footer-ul-heading">Специализация:</h3>
-                    <ul className="footer-ul">
+                    <ul className="footer-ul-emoji">
                         <li>похудение</li>
                         <li>набор мышечной массы</li>
                         <li>составление программ тренировок и питания</li>

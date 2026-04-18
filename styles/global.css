@@ -35,6 +35,10 @@
     content: '- ';
 }
 
+.footer-ul-emoji li::before {
+    content: '👉 ';
+}
+
 .button-tile {
     display: block;
     cursor: pointer;
