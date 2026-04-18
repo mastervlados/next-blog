@@ -36,8 +36,16 @@ const ButtonAppStore = ({ store }) => {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', gap: '10px' }}>
                 <img src={content[store].iconSrc} style={{ width: '36px', height: '36px', display: 'block', paddingLeft: '8px'}}/>
                 <div style={{width: '100%'}}>
-                    <p style={{ fontSize: '14px', color: content[store].textColor }}>{content[store].text}</p>
-                    <p style={{ fontSize: '18px', color: content[store].textColor }}>{content[store].storeName}</p>
+                    <p style={{ 
+                        fontSize: '12px', 
+                        color: content[store].textColor,
+                    }}>{content[store].text}</p>
+                    <p style={{ 
+                        fontSize: '16px', 
+                        color: content[store].textColor,
+                        fontFamily: 'Montserrat SemiBold',
+                        fontWeight: 600
+                    }}>{content[store].storeName}</p>
                 </div>
             </div>
 

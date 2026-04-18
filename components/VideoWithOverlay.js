@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonAppStore from "./ButtonAppStore";
+import MainContainer from "./MainContainer";
 
 const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
     return (
@@ -47,17 +47,10 @@ const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
                     left: 0,
                     right: 0,
                     zIndex: 777,
-                    color: 'white'
+                    display: 'flex',
                 }}
             >  
-                <h1>Анна Зверева</h1>
-                <p>Персональный тренер тренажерного зала</p>
-                <p>В своих тренировочных программах делаю акцент на ягодицы и осанку</p>
-                <p>Начните БЕСПЛАТНО прямо сейчас!</p>
-                <div style={{ display: 'flex', gap: '10px'}}>
-                    <ButtonAppStore store={'rustore'}/>
-                    <ButtonAppStore store={'appgallery'}/>
-                </div>
+                <MainContainer/>
             </div>       
         </div>
     )
