@@ -1,5 +1,8 @@
 import React from "react";
 import ButtonTile from "./ui/ButtonTile";
+import IconVK from "./ui/IconVK";
+import IconTelegram from "./ui/IconTelegram";
+import IconInstagram from "./ui/IconInstagram";
 
 const Footer = ({}) => {
     return (
@@ -30,9 +33,9 @@ const Footer = ({}) => {
                 <div className="footer-container">
                     <h3 className="footer-ul-heading">Подпишись:</h3>
                     <div style={{ display: 'flex', gap: '8px'}}>
-                        <ButtonTile href={'https://t.me/anyagymrat'}/>
-                        <ButtonTile href={'https://vk.com/anyachokavo'}/>
-                        <ButtonTile href={'https://www.instagram.com/anyachokavo/'}/>
+                        <ButtonTile icon={() => <IconTelegram width={19} height={19} color="#FFFFFF"/>} href={'https://t.me/anyagymrat'}/>
+                        <ButtonTile icon={() => <IconVK width={20} height={20} color="#FFFFFF"/>} href={'https://vk.com/anyachokavo'}/>
+                        <ButtonTile icon={() => <IconInstagram width={20} height={20} color="#FFFFFF"/>} href={'https://www.instagram.com/anyachokavo/'}/>
                     </div>
                 </div>
             </div> 
