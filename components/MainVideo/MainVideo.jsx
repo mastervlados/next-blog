@@ -10,9 +10,9 @@ const MainVideo = () => {
         <video 
             className={`w-full h-full ${styles.mainVideo}`}
             poster={data.posterSrc} 
-            // autoPlay
+            autoPlay
             playsInline
-            // loop 
+            loop 
             muted
             preload="auto"
         >

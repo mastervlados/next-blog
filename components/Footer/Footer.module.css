@@ -34,3 +34,14 @@
         align-items: center;
     }
 }
+
+@media (max-width: 1024px) and (min-width: 420px) {
+    .footerMain {
+        /* border: 1px solid red; */
+        width: 780px;
+        flex-wrap: wrap;
+        column-gap: 80px;
+        row-gap: 0px;
+        justify-content: end;
+    }
+}

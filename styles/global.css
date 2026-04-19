@@ -26,3 +26,9 @@ body {
         max-width: 300px;
     }
 }
+
+@media (max-width: 1770px) and (min-width: 420px) {
+    .wrap {
+        width: 90%;
+    }
+}
