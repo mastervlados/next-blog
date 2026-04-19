@@ -3,7 +3,7 @@ import MainContainer from "./MainContainer";
 
 const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
     return (
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: 'relative', overflow: 'hidden' }}>
             <div>
                 <video 
                     className="w-full h-full"
@@ -13,7 +13,7 @@ const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
                         objectPosition: 'top center', // Центрирует кадр
                         minHeight: '100%',
                         minWidth: '100%',
-                        maxHeight: '600px'
+                        maxHeight: '600px',
                     }}
                     poster={posterSrc} 
                     // autoPlay

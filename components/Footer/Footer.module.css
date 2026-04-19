@@ -1,3 +1,10 @@
+.footerMain {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
 .footerContainer {
     width: 300px;
 }
@@ -18,4 +25,12 @@
 
 .footerUlEmoji li::before {
     content: '👉 ';
+}
+
+@media (max-width: 420px) {
+    .footerMain {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
 }

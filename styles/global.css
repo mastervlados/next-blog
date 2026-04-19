@@ -16,7 +16,13 @@ body {
 
 .wrap {
     margin: 0 auto;
-    min-width: 1770px;
+    width: 100%;
     max-width: 1770px;
     /* border: 1px solid orange; */
+}
+
+@media (max-width: 420px) {
+    .wrap {
+        max-width: 300px;
+    }
 }

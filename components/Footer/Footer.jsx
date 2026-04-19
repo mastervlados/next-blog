@@ -8,10 +8,7 @@ import styles from './Footer.module.css'
 const Footer = ({}) => {
     return (
         <footer>
-            <div 
-                className="wrap"
-                style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px', marginBottom: '150px' }}
-            > 
+            <div className={`wrap ${styles.footerMain}`}> 
                 <div className={[styles.footerContainer]}>
                     <h3 className={[styles.footerUlHeading]}>Образование:</h3>
                     <ul className={[styles.footerUl]}>
