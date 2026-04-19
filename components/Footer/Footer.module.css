@@ -1,0 +1,21 @@
+.footerContainer {
+    width: 300px;
+}
+
+.footerUlHeading {
+    font-family: 'Montserrat Medium';
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footerUl li {
+    margin-bottom: 7px;
+}
+
+.footerUl li::before {
+    content: '- ';
+}
+
+.footerUlEmoji li::before {
+    content: '👉 ';
+}
