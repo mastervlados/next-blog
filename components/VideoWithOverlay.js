@@ -1,29 +1,14 @@
 import React from "react";
 import MainContainer from "./MainContainer";
+import MainVideo from "./MainVideo";
+import MainPoster from "./MainPoster";
 
-const VideoWithOverlay = ({videoSrc, posterSrc, overlayColor}) => {
+const VideoWithOverlay = ({overlayColor}) => {
     return (
         <div style={{ position: 'relative', overflow: 'hidden' }}>
             <div>
-                <video 
-                    className="w-full h-full"
-                    style={{ 
-                        display: 'block',
-                        objectFit: 'cover',  // Масштабирует видео, обрезая края
-                        objectPosition: 'top center', // Центрирует кадр
-                        minHeight: '100%',
-                        minWidth: '100%',
-                        maxHeight: '600px',
-                    }}
-                    poster={posterSrc} 
-                    // autoPlay
-                    playsInline
-                    // loop 
-                    muted
-                    preload="auto"
-                >
-                    <source src={videoSrc} type="video/mp4"/>
-                </video>
+                <MainPoster/>
+                <MainVideo/>
             </div>
             <div 
                 className="w-full h-full"

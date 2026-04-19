@@ -1,0 +1,13 @@
+.mainPoster {
+    display: none;
+    height: 600px;
+    background-image: url('https://light-vision.ucoz.ru/fairy/images/poster.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+@media (max-width: 420px) {
+    .mainPoster {
+        display: block;
+    }
+}
